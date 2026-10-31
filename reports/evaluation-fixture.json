@@ -1,0 +1,103 @@
+{
+  "mode": "fixture",
+  "python": "3.12.13",
+  "recorded_at": "2026-10-31T13:50:35.342710+00:00",
+  "elapsed_seconds": 0.0167,
+  "result": {
+    "passed": true,
+    "timing_source": "synthetic fixture, not model benchmark",
+    "comparison": {
+      "paired_cases": 2,
+      "configs": {
+        "baseline": {
+          "accuracy": 0.5,
+          "mean_latency_ms": 284.0,
+          "tokens": 115,
+          "error_steps": 0
+        },
+        "candidate": {
+          "accuracy": 1.0,
+          "mean_latency_ms": 280.0,
+          "tokens": 124,
+          "error_steps": 0
+        }
+      },
+      "regressions": [],
+      "passed": true
+    },
+    "traces": [
+      {
+        "id": "base-1",
+        "case_id": "refund",
+        "config": "baseline",
+        "expected": "billing",
+        "actual": "general",
+        "steps": [
+          {
+            "name": "retrieve",
+            "duration_ms": 18.0,
+            "tokens": 0,
+            "status": "ok"
+          },
+          {
+            "name": "classify",
+            "duration_ms": 240.0,
+            "tokens": 54,
+            "status": "ok"
+          }
+        ]
+      },
+      {
+        "id": "base-2",
+        "case_id": "outage",
+        "config": "baseline",
+        "expected": "urgent",
+        "actual": "urgent",
+        "steps": [
+          {
+            "name": "classify",
+            "duration_ms": 310.0,
+            "tokens": 61,
+            "status": "ok"
+          }
+        ]
+      },
+      {
+        "id": "new-1",
+        "case_id": "refund",
+        "config": "candidate",
+        "expected": "billing",
+        "actual": "billing",
+        "steps": [
+          {
+            "name": "retrieve",
+            "duration_ms": 20.0,
+            "tokens": 0,
+            "status": "ok"
+          },
+          {
+            "name": "classify",
+            "duration_ms": 260.0,
+            "tokens": 65,
+            "status": "ok"
+          }
+        ]
+      },
+      {
+        "id": "new-2",
+        "case_id": "outage",
+        "config": "candidate",
+        "expected": "urgent",
+        "actual": "urgent",
+        "steps": [
+          {
+            "name": "classify",
+            "duration_ms": 280.0,
+            "tokens": 59,
+            "status": "ok"
+          }
+        ]
+      }
+    ]
+  }
+}

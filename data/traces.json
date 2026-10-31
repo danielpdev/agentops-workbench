@@ -1,0 +1,6 @@
+[
+ {"id":"base-1","case_id":"refund","config":"baseline","expected":"billing","actual":"general","steps":[{"name":"retrieve","duration_ms":18,"tokens":0,"status":"ok"},{"name":"classify","duration_ms":240,"tokens":54,"status":"ok"}]},
+ {"id":"base-2","case_id":"outage","config":"baseline","expected":"urgent","actual":"urgent","steps":[{"name":"classify","duration_ms":310,"tokens":61,"status":"ok"}]},
+ {"id":"new-1","case_id":"refund","config":"candidate","expected":"billing","actual":"billing","steps":[{"name":"retrieve","duration_ms":20,"tokens":0,"status":"ok"},{"name":"classify","duration_ms":260,"tokens":65,"status":"ok"}]},
+ {"id":"new-2","case_id":"outage","config":"candidate","expected":"urgent","actual":"urgent","steps":[{"name":"classify","duration_ms":280,"tokens":59,"status":"ok"}]}
+]
