@@ -1,0 +1,11 @@
+{
+  "source": "docs/demo.webm",
+  "source_sha256": "a2dce98bc03ed26b7afef7876ee0ac661cc3b56bb93fa336e8d85e0c20196f89",
+  "gif_sha256": "303840c306add46f6021f362c006acb0c1a7baf47b6e3ee6ebbe97a946b127c6",
+  "bytes": 3231818,
+  "duration_seconds": 25.0,
+  "width": 1000,
+  "height": 694,
+  "frame_count": 125,
+  "caption": "Excerpt from the recorded local UI demonstration, played faster."
+}
